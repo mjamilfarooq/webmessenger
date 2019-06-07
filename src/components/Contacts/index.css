@@ -1,0 +1,38 @@
+.contact-list {
+  display: hidden;
+  overflow-y: scroll;
+}
+
+.contact-card {
+  border-bottom: 1px solid gray;
+  height: 72px;
+  align-items: center;
+  padding: 15px 5px 5px 5px;
+}
+
+.contact-card-image {
+  width: 20%;
+  float: left;
+}
+
+.contact-card-image img {
+  border-radius: 50%;
+  width: 49px;
+}
+
+.contact-card-info {
+  width: 80%;
+  float: right;
+}
+
+.contact-card-title {
+  text-align: left;
+  width: 80%;
+  float: left;
+}
+
+.contact-card-lastseen {
+  text-align: center;
+  width: 20%;
+  float: right;
+}

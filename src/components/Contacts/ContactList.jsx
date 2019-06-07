@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { ListGroup } from "react-bootstrap";
 import Contact from "./Contact";
+import "./index.css";
 
 export default class ContactList extends Component {
   render() {
@@ -10,15 +10,24 @@ export default class ContactList extends Component {
       { name: "John whick", lastmsg: "hello buddy", lastseen: "23:35" },
       { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
       { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
+      { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" },
       { name: "lena headley", lastmsg: "you win or die", lastseen: "23:35" }
     ];
     return (
-      <div>
-        <select variant="flush" as="ul" multiple>
-          {list.map(contact => (
-            <Contact contact={contact} />
-          ))}
-        </select>
+      <div class="contact-list">
+        {list.map(contact => (
+          <Contact contact={contact} />
+        ))}
       </div>
     );
   }
