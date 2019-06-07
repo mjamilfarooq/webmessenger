@@ -2,7 +2,9 @@ import React from "react";
 import {
     FaSearch,
     FaPaperclip,
-    FaEllipsisV
+    FaEllipsisV,
+    FaSmile,
+    FaMicrophoneAlt
   } from "react-icons/fa";
 import "./index.css";
 
@@ -24,7 +26,13 @@ export default function Messages(props) {
             </div>
 
         </header>
-        <footer>helloworld</footer>
+        <footer>
+            <div>
+                <FaSmile />
+            </div>
+            <div class="message-editor"><input type="text" placeholder="Write a message ..."/></div>
+            <div><FaMicrophoneAlt /></div>
+        </footer>
         <textarea />
     </div>
   );
