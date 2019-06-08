@@ -13,40 +13,33 @@
   align-items: center;
 }
 
-.message-window .options svg{
-    margin-right: 15px;
+.message-window .options svg {
+  margin-right: 15px;
 }
 
-.message-window  .image {
-    flex: none;
-    padding: 5px;
-    margin-right: 10px;
+.message-window .image {
+  flex: none;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 .message-window img {
-    border-radius: 50%;
-    width: 40px;
+  border-radius: 50%;
+  width: 40px;
 }
 
 .message-window .info {
-    flex: 6;
+  flex: 6;
 }
 
-.message-window .options{
-    display: flex;
-    flex:2;
-    justify-content: right;
-}
-
-.message-window textarea {
-  height: 100%;
-  overflow-y: scroll;
-  order: 2;
-  resize: none;
+.message-window .options {
+  display: flex;
+  flex: 2;
+  justify-content: right;
 }
 
 .message-window footer {
-  display: flex;    
+  display: flex;
   height: 100px;
   order: 3;
   align-items: center;
@@ -54,21 +47,77 @@
 }
 
 .message-window footer svg {
-    width: 40px;
-    height: 40px;
-    flex:none;
+  width: 40px;
+  height: 40px;
+  flex: none;
 }
 
-.message-editor{
-    flex: 80%;
-    padding: 5px;
+.message-editor {
+  flex: 80%;
+  padding: 5px;
 }
 
-.message-window footer input[type="text"]{
-    width: 100%;
-    border-radius: 20px;
-    height: 50px;
-    padding: 0px 10px;
+.message-window footer input[type="text"] {
+  width: 100%;
+  border-radius: 20px;
+  height: 50px;
+  padding: 0px 10px;
 }
 
+#message-area {
+  height: 500px;
+  order: 2;
+  padding: 20px;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-direction: column;
+}
 
+#message-area .message {
+  background: white;
+  color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  width: 350px;
+  margin-bottom: 10px;
+  display: block;
+  float: right;
+}
+
+#message-area .message .attachment {
+  width: 330px;
+  height: 330px;
+}
+
+#message-area .message img {
+  width: 330px;
+  height: 330px;
+  border-radius: 0;
+}
+
+#message-area .message .header {
+  height: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+#message-area .message .footer {
+  overflow: hidden;
+  /* height: 55px; */
+  width: 100%;
+  text-overflow: "...";
+  background-color: white;
+  padding: 10px 10px;
+}
+
+#message-area .message p {
+  display: inline;
+}
+
+.clamp-lines button {
+  /* display: inline; */
+  background: none;
+  color: blue;
+  border: none;
+}
